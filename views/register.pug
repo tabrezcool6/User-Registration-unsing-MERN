@@ -1,0 +1,60 @@
+extends base.pug  
+
+block scripts 
+    script 
+        include ../static/index.js 
+
+block style 
+    style 
+         include ../static/style.css
+
+block content
+    section.section#loginPage
+            .column.left#login_page
+                ul 
+                    li Categories
+                    li #[a(href="/") Educational]
+                    li #[a(href="/") Time Management]
+                    li #[a(href="/") Self-Development]
+                    li #[a(href="/") Entreprenuership]
+                ul 
+                    li Shop and Learn
+                    li #[a(href="/") Music]
+                    li #[a(href="/") Movies]
+                    li #[a(href="/") Shows]
+                    li #[a(href="/") Apps]
+                ul 
+                    li Education and Business 
+                    li #[a(href="/") Education]
+                    li #[a(href="/") College Books]
+                    li #[a(href="/") High School Books]
+                    li #[a(href="/") Degree Books]
+
+            .column.right#register_page 
+
+                .register_inner_column#register_layout
+                    h3#id_login Register
+                    form(action="/registerForm" method="post" class="my_register_form") 
+                        #id_username
+                            p Username
+                            input(type="text", name="reg_username" placeholder="enter your Username")
+                    
+                        #id_name
+                            p Full Name
+                            input(type="text", name="reg_name" placeholder="enter your name")
+                    
+                        #id_number
+                            p Number
+                            input(type="phone", name="reg_number" placeholder="enter your number")
+                    
+                        #id_email
+                            p E-mail
+                            input(type="email", name="reg_email" placeholder="enter your email")
+
+                        #id_password
+                            p Password
+                            input(type="password", name="reg_pass" placeholder="enter your password")
+
+                        button#reg_submit_button.btn Submit
+
+                        p#id_register_now Have an account #[a(href='loginPage') click here] to Login.

@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+
+:root {
+  --primary-color: #ffd865;
+  --primary-light: #ffe391;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.container {
+  position: fixed;
+  width: 100%;
+}
+.navbar {
+  background-color: black;
+  padding: 10px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.navbar ul li {
+  list-style: none;
+  padding: 8px 25px;
+  color: white;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bolder;
+  font-size: 17px;
+  transition: 0.2s ease-in-out;
+}
+.navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+.section {
+  width: 100%;
+  height: 100vh;
+  color: white;
+  font-weight: bolder;
+  tab-size: 25px;
+  padding: 0 75px;
+  font-size: 3rem;
+}
+.commonSection{
+  padding-top: 35px;
+}
+#homePage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 450px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/static/books_bg.jpg") center/cover no-repeat;
+}
+#homePage h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+#homePage p {
+  text-align: center;
+  font-size: 17px;
+}
+.details {
+  display: flex;
+  margin-top: 85px;
+}
+.details #contact {
+  width: 600px;
+  text-align: left;
+  font-size: 20px;
+}
+.details #place {
+  width: 600px;
+  text-align: right;
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+#booksPage {
+  width: 100%;
+  height: 600px;
+}
+#storesPage {
+  width: 100%;
+  height: 600px;
+}
+#aboutPage {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 25px;
+}
+
+
+ #booksPage p,
+ #storesPage p,
+ #aboutPage p{
+   text-align: center;
+   padding: 25px 0 5px 0;
+   color: var(--primary-color);
+}
+.mainFrame{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  border-radius: 16px;
+  border: 2px solid black;
+  background-color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("/static/books_centre.jpg") center/cover no-repeat; 
+  padding: 20px;
+}
+#aboutPage .mainFrame{
+  height: 475px;
+}
+#storesPage .mainFrame{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("/static/books_stack.jpg") center/cover no-repeat; 
+}
+#aboutPage .mainFrame{
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  url("/static/books_lots.jpg") center/cover no-repeat; 
+}
+#booksPage .mainFrame .booksCard,
+#storesPage .mainFrame .booksCard{
+  height: 220px;
+}
+#booksPage .mainFrame h3 ,
+#storesPage .mainFrame h3 {
+  font-size: 22px;
+  padding: 10px 15px;
+  text-decoration: underline;
+  font-weight: 600;
+}
+#booksPage .booksCard .cardDivision,
+#storesPage .booksCard .cardDivision{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section .card{
+  border: 2px solid white ;
+  height: 150px;
+  width: 12%;
+  margin-top: 12px;
+}
+
+
+
+
+
+
+
+
+#aboutPage .mainFrame p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  padding-top: 50px;
+}
+
+#aboutPage .footer-cols {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns:repeat(4, 1fr);
+  padding: 2rem;
+  text-align: left;
+  font-size: 14px;
+}
+
+#aboutPage .footer-cols ul {
+  list-style: none;
+}
+#aboutPage .footer-cols ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 17px;
+  transition: 0.3s ease-in-out;
+}
+#aboutPage .footer-cols ul li a:hover {
+  color: var(--primary-light);
+  text-decoration: underline;
+}
+#aboutPage .footer-cols ul li:first-child {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: white solid 1px;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#loginPage {
+  width: 100%;
+  height: 600px;
+  background: url("") center/cover no-repeat;
+}
+
+#loginPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  padding-top: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/static/books_bg.jpg") center/cover no-repeat;
+  /* background-color: black; */
+}
+#loginPage .column {
+  width: 45%;
+}
+#loginPage .left {
+  height: 500px;
+  border-radius: 14px;
+  margin: auto auto;
+  color: black;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 2rem;
+  text-align: left;
+  font-size: 14px;
+}
+
+#loginPage .left ul {
+  list-style: none;
+}
+#loginPage .left ul li {
+  padding-bottom: 3px;
+}
+#loginPage .left ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s ease-in-out;
+}
+#loginPage .left ul li a:hover {
+  color: var(--primary-light);
+  text-decoration: underline;
+}
+#loginPage .left ul li:first-child {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: var(--primary-color) solid 1px;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+#loginPage .right {
+  background-color: lightgreen;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  margin: auto auto;
+}
+#loginPage input {
+  display: block;
+}
+#loginPage #id_login {
+  margin-bottom: 10px;
+  color: black;
+  font-size: 24px;
+  display: block;
+  text-align: center;
+}
+#loginPage #id_username,
+#loginPage #id_password,
+#loginPage #id_name,
+#loginPage #id_number,
+#loginPage #id_email {
+  margin: 10px;
+  color: black;
+  font-weight: 200;
+  font-size: 18px;
+}
+#loginPage #id_username p,
+#loginPage #id_password p,
+#loginPage #id_name p,
+#loginPage #id_number p,
+#loginPage #id_email p {
+  margin: 4px 0;
+  font-size: 15px;
+}
+#loginPage .right input {
+  outline: none;
+  padding: 5px;
+  width: 250px;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+#loginPage input::placeholder {
+  color: grey;
+}
+#loginPage .right button {
+  display: block;
+  margin: 25px auto 0 auto;
+  font-size: 14px;
+  background-color: white;
+  border: none;
+  padding: 7px 30px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+#loginPage button:hover {
+  background-color: black;
+  color: white;
+}
+#loginPage #id_register_now {
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: 400;
+}
+#loginPage #id_register_now a {
+  text-decoration: none;
+  font-weight: 700;
+}
+#loginPage #id_register_now a:hover {
+  text-decoration: underline;
+}
+
+
+#footer{
+  color: white;
+  height: 10vh;
+  font-size: 18px;
+  text-align: center;
+  padding-top: 20px;
+  background-color: black;
+}

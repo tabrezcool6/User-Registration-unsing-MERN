@@ -1,0 +1,47 @@
+extends base.pug  
+
+block scripts 
+    script 
+        include ../static/index.js 
+
+block style 
+    style 
+         include ../static/style.css
+
+block content
+    section.section#loginPage
+            .column.left#login_page
+                ul 
+                    li Categories
+                    li #[a(href="/") Educational]
+                    li #[a(href="/") Time Management]
+                    li #[a(href="/") Self-Development]
+                    li #[a(href="/") Entreprenuership]
+                ul 
+                    li Shop and Learn
+                    li #[a(href="/") Music]
+                    li #[a(href="/") Movies]
+                    li #[a(href="/") Shows]
+                    li #[a(href="/") Apps]
+                ul 
+                    li Education and Business 
+                    li #[a(href="/") Education]
+                    li #[a(href="/") College Books]
+                    li #[a(href="/") High School Books]
+                    li #[a(href="/") Degree Books]
+
+            .column.right#register_page 
+                .login_inner_column#login_layout
+                    h3#id_login Login
+                    form(action="/loginForm" method="post" class="my_login_form") 
+                        #id_username
+                            p Username
+                            input(type="text" name="log_email" placeholder="enter your Username/email")
+                        #id_password
+                            p Password
+                            input(type="password", name="log_pass" placeholder="enter your password")
+
+                        button#log_submit_button Submit
+
+                    p#id_register_now Don't have account #[a(href='registerPage') click here] to Register.
+
